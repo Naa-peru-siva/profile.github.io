@@ -25,8 +25,9 @@
             padding: 0;
             height: 100vh;     
             font-family: "Rajdhani", sans-serif;  
-            font-weight: 500;       
+            font-weight: 500;     
             color: black;
+			font-size: 20px;
         }
         
         header {      
@@ -36,9 +37,8 @@
         }
         
         .pic {
-           width: 140px; 
-           height: 100px;  
-           margin-top: 20px;     
+           width: 12%; 
+           height: 7%;      
            filter: grayscale(40%);
            animation: pic 1s ease forwards;     
         }
@@ -51,15 +51,15 @@
             100% {
                 border: 1px solid black;
                 border-radius: 10px;
-                margin-left: 20px;
+                margin-left: 10%;
             } 
         }
         
         .title {
             font-weight: bold;
-            font-size: 35px;  
-            margin-left: 30px;
-            margin-right: 20px;            
+            font-size: 280%;
+			margin: 0;
+			padding: 0;      
         } 
         
         .la {
@@ -80,8 +80,10 @@
          }   
          
          .sub-title {         
-            font-size: 16px;
-            font-weight: bold;          
+            font-size: 100%;
+            font-weight: bold;
+			margin: 1;
+			padding: 0;   
         }
         
         main {
@@ -114,35 +116,31 @@
                 margin-left: 0;
             }
         }
-        
-        #click1,#click2,#click3 {
-            cursor: pointer;      
-        }
-        
-        .click:hover {
-            font-weight: bold;
-        }
-       
-       .click:active {
-           color: transparent;
-           opacity: 60%;
-       } 
        
        a {
            text-decoration: none;
            color: white;
        }
-       
-       nav ul {
-           list-style-type: none;
-           display: flex; 
-           justify-content: right;
-       }
-       
-       nav ul li {
-           margin-right: 40px;         
-           padding-bottom: 20px;
-       }
+
+	   nav ul {
+			list-style-type: none;
+			display: flex;
+			justify-content: right;
+			padding: 1.8%;
+	   }
+
+	   nav ul li {
+			margin-right: 4%;
+			cursor: pointer;
+	   }
+
+	   .pop:hover {
+			font-size: 21px;
+	   }
+
+	   .pop:active {
+			font-weight: bolder;
+	   }
        
        #item2 > h1 > hr, #item3 > h1 > hr {
            animation: underline 1s ease forwards;     
@@ -236,28 +234,29 @@
          
          @keyframes effect {
              from {
-                 font-size: 16px;
+                 font-size: 20px;
              }
              
              to {
-                 font-size: 16.3px;
+                 font-size: 21px;
              }
          }
          
          footer {
              background-color: rgba(0, 0, 0, 0.9);
              color: white; 
-             padding-bottom: 10px; 
-             padding-top: 10px;
+             padding-bottom: 1.6%; 
+             padding-top: 1.6%;
              box-shadow: 0px 0px 8px black;  
          }
-         
-         footer > h3 {
-             margin-left: 40px;
-         }
+
+		 footer > div {
+				display: flex;
+				justify-content: center;
+		 }
          
          footer > div > span {
-             margin-right: 30px;
+             margin-right: 3%;
          }
          
          .visitlink {
@@ -287,23 +286,39 @@
              grid-template-columns: 1fr 1fr;
              justify-content: space-around;
          }
+
+		 .arrange > span {
+			padding: 10%;
+		 }
+
+		 header > div:nth-child(1) {
+			align-items: center;
+			justify-content: left;
+			display: flex;
+			width: 100%;
+			padding-top: 2%;
+		 }
+
+		 header > div > div:nth-child(2) {
+			width: 100%;
+			margin-left: 2%;
+		 }
     </style>
 </head>
 <body>  
     <header>  
-       <div style="justify-content: left;align-items: center;display: flex;margin-right: 20px;">
+       <div>
             <img class="pic" src="https://lh3.googleusercontent.com/fife/ALs6j_FKX42ywk5ZMxwP6oAYEodeweX57_7HKi26gSenxHDP4OqGlbGLe_9DpuZK9MCeL4NgXWYeCPRdyWqdihKRb2fotqSCZlH2nZAGvKbuKfzNiKoazQlO9RhbMQORLBqs02r9HfzKASM8dph_lJmW_pog-hK7H89mzQXRO8crKkrBPPFVwJyak-icpPHc66_40fZPVmErhf9VToqufuV5RsIX30-_aA4S0xPLr2sQYA3R4MNu6VG-NyWoJppn4ga1hOlKuvLtWFrJKwhUfhj_Je-6xuwvtsCAQLdbeTiwtXYziWyBtEZxqJpBiUHWYpKd9hLBHOPehWsE3KWsW69aKG524EuUQkskM2dAHiJ-i7Rp9sI2GJaqOy8IMXioWaW6khkloDbK_MiHGoX8YxbkHyELFk77P7TbfQrsNCIBR2f7Vyx9Zd1K8pWJXzgwLWeOpBV_HU0SKcKK6nELQRxGUVfynXHHHFxOWIAUCu5QqnJfwkz9SJg3oeeyJ2rbD1iVaVeurFdOHmiaCCvnn16dw_uVBqvvhXMBB_UEd99YDKex5zKqJj1iVY-2PVMiWfwdpWiObK5kHpJxMkrHygnL8JMkvrN6RjBLy6Ii0iGKo3dxnGX2-7APdlDMglXlRPZ_xrtK4mWSGeDv-wugUygH0vjyidINrfDZlaszX-OgLvRvpq6-XQ-CQxQmTc4uVOAbjZ-q9Ar9eT0MJRRYxU0giH-lZPrNfPa0x2TpRse3iL5iU0x76d8ZJSsoxwh17I8mN70EthIB_pq_sySRJj3jkWFnf77fZatnHZeN8Qt8bbbcwKyt0Z9RbiOkvgQk0sF3kyOFbMRBa2pbZhG3wumyU3Nv4nvmGcRFOyfYqsG-jqN3YLi4CKMUEN_gewrwA4tV5SXvywVRAnJix8YSgEg3AKVGnQ5woszoxwTmygPrArFIlZ4eDITbzGWxN9weEzvLfOVO9g-QtxodZ-kx1adAPDSEw6IQ1mAQwR2jNy6ysH003LVJz2VvNU1RmjgEmoUbaJKZIL25-_1dVsTpxEqEbJD82YJIskDPZspC-QscXd7xiPjdHq78vo0GLyfOFS9gHQVJR6bUaZnC06e7izXFz0pxd0lFER7NkQxwDTUv8u0v8YMZgxOSQBfJBHuNeh7eIAIVIEXo6RG2-c94l1Ca7EfyxZ0A7TM9DrZenNd_Z_5tGzr0jUCXveBfTSjrnLvfsoZtd3_V_7S6Yfq3_5BJhqtfLInNt4jCAlZjE8Ma_jsLoe8kqw9UbhpyiB_8UrfT3FU450sn5dYtEv4gD_uL1RhHxORyNA5MmzKHb_4gwYMFY_jhCQZQRdNELEHfipycFsm9LTHdQI9T4TP8b5asvi7xPimDQzE4Zdo4O7jOSfcqxkwheOnL_4tBTV2d55-prx-kB2G-1OOc0nhGL6ib0EwDOt9iT_oXCgyzUswPJemIGj-9wuUcy9Mjwb3uRV9fvR790FsMdRYpyMtvvfqshWOX3EkBwRNFFtPsThSeJSMrWEsMoxZrpOtzbougTjS0UXQgf5_fuf3hhj8Bj3tsf9U_KQovHmBDQK4nCY7aZ650TraGxCpOFFJHUio1xKvOls9PgrdLrGU6haA=w348-h260-p-k-nu" alt="profile photo">
-            <div class="title">
-                <p>K<span class="la">althireddy</span> S<span class="la">iva</span> S<span class="la">ankar</span></p>
-                <p class="sub-title">Aspiring Frontend Developer</p> 
-            </div>
+            <div>
+				<p class="title">K<span class="la">althireddy</span> S<span class="la">iva</span> S<span class="la">ankar</span></p>
+				<p class="sub-title">Aspiring Frontend Developer</p>
+			</div> 	
        </div>      
-        <br>   
             <nav>
                 <ul>
-                    <li class="showItem click" data-item="item1">Home</li>
-                    <li class="showItem click" data-item="item2">Projects</li>
-                    <li class="showItem click" data-item="item3">Certifications</li>
+                    <li class="showItem pop" data-item="item1">Home</li>
+                    <li class="showItem pop" data-item="item2">Projects</li>
+                    <li class="showItem pop" data-item="item3">Certifications</li>
                 </ul>
             </nav>
     </header>   
@@ -311,14 +326,14 @@
     <main> 
         <div id="item1" class="item" style="display:block;">        
             <div>
-                <h3>About<hr></h3>
+                <h2>About<hr></h2>
                 <p class="effect">Interested in the field of web development to implement the creative skills, ideas towards work. A person of hardworking nature and great commitment. Looking for the opportunities by improving the skills.</p>
             </div>
             
             <div class="arrange">
                 <span>
                      <ul>
-                        <li style="list-style-type: none;"><h3>skills<hr></h3></li>
+                        <li style="list-style-type: none;"><h2>skills<hr></h2></li>
                             <li class="effect">HTML</li>
                             <li class="effect">CSS</li>
                             <li class="effect">Javascript HTML DOM</li>
@@ -328,7 +343,7 @@
                 
                 <span>
                     <ul>
-                        <li style="list-style-type: none;"><h3>Internships<hr></h3></li>
+                        <li style="list-style-type: none;"><h2>Internships<hr></h2></li>
                             <li class="effect">Web Development <sub> - Skillvertex</sub></li>
                             <li class="effect">Fullstack Development <sub> - Indstacks</sub></li>
                     </ul>
@@ -368,7 +383,7 @@
     </main>    
      
     <footer>  
-        <div class="setting">
+        <div>
             <span class="setting">
                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/></svg>&nbsp;&nbsp;<p>+91 6281635622</p>
@@ -382,7 +397,7 @@
              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16"> <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/> </svg>&nbsp;&nbsp;<p><a href="https://www.linkedin.com/in/kalthireddy-siva-sankar-175405239?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a></p>  
              </span>
          </div> 
-         <center><p style="font-size: 5px;"><span style="font-family: Arial, sans-serif;">&copy;</span> 2024 Designed by Kalthireddy Siva Sankar</p></center>     
+         <center><p style="font-size: 12px;"><span style="font-family: Arial, sans-serif;">&copy;</span> 2024 Designed by Kalthireddy Siva Sankar</p></center>     
     </footer>          
 </body>
 </html>
