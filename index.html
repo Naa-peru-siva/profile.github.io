@@ -82,7 +82,7 @@
          .sub-title {         
             font-size: 100%;
             font-weight: bold;
-			margin: 1;
+			margin: 1%;
 			padding: 0;   
         }
         
@@ -93,26 +93,29 @@
         }
         
         hr {
-          width: 90px;
           height: 2px;
           background-color: black;
           border: none;
-          animation: hr 4s ease infinite;
+          animation: underline 5s infinite;
+        }
+
+        .arrange > span > ul > li > h2 > hr {
+          width: 90%;
+          height: 2px;
+          background-color: black;
+          border: none;
+          margin-left: 0;
+          animation: underline 5s infinite;
         }
         
-        @keyframes hr {
+        @keyframes underline {
             0% {
-                width: 90px;
-                margin-left: 0;
+               width: 20px;
+               margin-left: 0;
             }
-            
-            50% {
-                width: 20px;
-                margin-left: 14px;
-            }
-            
+
             100% {
-                width: 90px;
+                width: auto;
                 margin-left: 0;
             }
         }
@@ -141,20 +144,6 @@
 	   .pop:active {
 			font-weight: bolder;
 	   }
-       
-       #item2 > h1 > hr, #item3 > h1 > hr {
-           animation: underline 1s ease forwards;     
-       }
-       
-       @keyframes underline{
-               from {
-                   width: 0;
-               }
-               
-               to {
-                   width: 100%;
-               }
-           }
           
           .hborderline {
               animation: border1 2s ease forwards;
@@ -277,18 +266,14 @@
              }
          }
          
-         #item1 >div:nth-child(2) > span > ul > li {
-             padding: 2px 0px;
-         }
-         
          .arrange {
              display: grid;
-             grid-template-columns: 1fr 1fr;
+             grid-template-columns: 1fr 1fr 1fr;
              justify-content: space-around;
          }
 
 		 .arrange > span {
-			padding: 10%;
+			padding: 4%;
 		 }
 
 		 header > div:nth-child(1) {
@@ -346,6 +331,14 @@
                         <li style="list-style-type: none;"><h2>Internships<hr></h2></li>
                             <li class="effect">Web Development <sub> - Skillvertex</sub></li>
                             <li class="effect">Fullstack Development <sub> - Indstacks</sub></li>
+                    </ul>
+                </span>
+
+                <span>
+                    <ul>
+                        <li style="list-style-type: none;"><h2>Education<hr></h2></li>
+                        <li class="effect"><b>B.tech, Computer Science and Engineering</b><br><center>Narayana Engineering college, Gudur<br>2022 - 2025</center></li>
+                        <li class="effect"><b>Diploma, Electrical and Electronics Engineering</b><br><center>Govt.polytechnic college, Gudur<br>2019 - 2022</center></li>
                     </ul>
                 </span>
              </div>
