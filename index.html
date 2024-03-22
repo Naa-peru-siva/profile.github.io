@@ -96,27 +96,44 @@
           height: 2px;
           background-color: black;
           border: none;
-          animation: underline 5s infinite;
+          animation: underlineabout 1s ease forwards;
+          margin-left: 0;
         }
+        
 
         .arrange > span > ul > li > h2 > hr {
-          width: 90%;
           height: 2px;
           background-color: black;
           border: none;
+          animation: dsectionlines 1s ease forwards;
           margin-left: 0;
-          animation: underline 5s infinite;
         }
-        
-        @keyframes underline {
+              
+        @keyframes underlineabout {
             0% {
-               width: 20px;
-               margin-left: 0;
+                width: 2%;
+            }
+
+            50% {
+                width: 100%;
             }
 
             100% {
-                width: auto;
-                margin-left: 0;
+                width: 98%;
+            }
+        }
+
+        @keyframes dsectionlines {
+            0% {
+                width: 2%;
+            }
+
+            50% {
+                width: 90%;
+            }
+
+            100% {
+                width: 52%;
             }
         }
        
