@@ -7,16 +7,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Meddon&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.7.1.js"            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous">   
-    </script>
     <script>
-        $(document).ready(function(){
-            $(".showItem").click(function(){
-                var toShow = $(this).data("item");
-                $(".item").hide();
-                $("#" + toShow).show();
-            });
-        });
+        document.getElementById('homelink').addEventListener('click', function(){ showPage('homepage');});
+	document.getElementById('projectslink').addEventListener('click', function(){ showPage('projectspage');});	
+	document.getElementById('certificationslink').addEventListener('click', function(){ showPage('certificationspage');});
+	    function showPage(pageId) {
+		    document.getElementsById('homepage').style.display="none";
+		    document.getElementsById('certificationspage').style.display="none";
+		    document.getElementsById('projectspage').style.display="none";
+		   
+		    document.getElementById(pageId).style.display ="block";
+	    }
     </script>
    
     <style>  
@@ -27,7 +28,7 @@
             font-family: "Rajdhani", sans-serif;  
             font-weight: 500;     
             color: black;
-			font-size: 20px;
+	    font-size: 20px;
         }
         
         header {      
@@ -318,15 +319,15 @@
        </div>      
             <nav>
                 <ul>
-                    <li class="showItem pop" data-item="item1">Home</li>
-                    <li class="showItem pop" data-item="item2">Projects</li>
-                    <li class="showItem pop" data-item="item3">Certifications</li>
+                    <li id ="homelink">Home</li>
+                    <li id ="projectslink">Projects</li>
+                    <li id ="certificationslink">Certifications</li>
                 </ul>
             </nav>
     </header>   
             <br>
     <main> 
-        <div id="item1" class="item" style="display:block;">        
+        <div id="homepage" style="display:block;">        
             <div>
                 <h2>About<hr></h2>
                 <p class="effect">Interested in the field of web development to implement the creative skills, ideas towards work. A person of hardworking nature and great commitment. Looking for the opportunities by improving the skills.</p>
@@ -361,7 +362,7 @@
              </div>
         </div>  
         
-        <div id="item2" class="item" style="display:none;">
+        <div id ="projectspage"style="display:none;">
             <h1>Projects<hr></h1>
             <br>
             <h2 class="ph hborderline">ClassicTunes</h2>
@@ -381,7 +382,7 @@
               
         </div>
         
-        <div id="item3" class="item" style="display:none;">
+        <div id="certificationspage" style="display:none;">
             <h1>Certifications<hr></h1>
             <span class="setting">
                 <iframe src="https://drive.google.com/file/d/1-GRnvz0ZoC-WAGIhR9qbPYeRC4ccmJRZ/preview" width="330" height="240" allow="autoplay"></iframe>
