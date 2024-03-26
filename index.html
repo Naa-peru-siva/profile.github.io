@@ -8,16 +8,26 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Meddon&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script>
-        document.getElementById('homelink').addEventListener('click', function(){ showPage('homepage');});
-	document.getElementById('projectslink').addEventListener('click', function(){ showPage('projectspage');});	
-	document.getElementById('certificationslink').addEventListener('click', function(){ showPage('certificationspage');});
-	    function showPage(pageId) {
-		    document.getElementsById('homepage').style.display="none";
-		    document.getElementsById('certificationspage').style.display="none";
-		    document.getElementsById('projectspage').style.display="none";
-		   
-		    document.getElementById(pageId).style.display ="block";
-	    }
+      document.getElementById('homelink').addEventListener('click', function() {
+    showPage('homepage');
+});
+
+document.getElementById('projectslink').addEventListener('click', function() {
+    showPage('projectspage');
+});
+
+document.getElementById('certificationslink').addEventListener('click', function() {
+    showPage('certificationspage');
+});
+
+function showPage(pageId) {
+    document.getElementById('homepage').style.display = 'none';
+    document.getElementById('certificationspage').style.display = 'none';
+    document.getElementById('projectspage').style.display = 'none';
+
+    document.getElementById(pageId).style.display = 'block';
+}
+
     </script>
    
     <style>  
