@@ -7,29 +7,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Meddon&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script>
-      document.getElementById('homelink').addEventListener('click', function() {
-    showPage('homepage');
-});
-
-document.getElementById('projectslink').addEventListener('click', function() {
-    showPage('projectspage');
-});
-
-document.getElementById('certificationslink').addEventListener('click', function() {
-    showPage('certificationspage');
-});
-
-function showPage(pageId) {
-    document.getElementById('homepage').style.display = 'none';
-    document.getElementById('certificationspage').style.display = 'none';
-    document.getElementById('projectspage').style.display = 'none';
-
-    document.getElementById(pageId).style.display = 'block';
-}
-
+    <script src="https://code.jquery.com/jquery-3.7.1.js"            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous">   
     </script>
-   
+    <script>
+        $(document).ready(function(){
+            $(".showItem").click(function(){
+                var toShow = $(this).data("item");
+                $(".item").hide();
+                $("#" + toShow).show();
+            });
+        });
+    </script>
     <style>  
         body {
             margin: 0;
@@ -337,7 +325,7 @@ function showPage(pageId) {
     </header>   
             <br>
     <main> 
-        <div id="homepage">        
+        <div id="item1" class="item" style="display:block;">        
             <div>
                 <h2>About<hr></h2>
                 <p class="effect">Interested in the field of web development to implement the creative skills, ideas towards work. A person of hardworking nature and great commitment. Looking for the opportunities by improving the skills.</p>
@@ -372,7 +360,7 @@ function showPage(pageId) {
              </div>
         </div>  
         
-        <div id ="projectspage">
+        <div id="item2" class="item" style="display:none;">
             <h1>Projects<hr></h1>
             <br>
             <h2 class="ph hborderline">ClassicTunes</h2>
@@ -392,7 +380,7 @@ function showPage(pageId) {
               
         </div>
         
-        <div id="certificationspage">
+        <div id="item3" class="item" style="display:none;">
             <h1>Certifications<hr></h1>
             <span class="setting">
                 <iframe src="https://drive.google.com/file/d/1-GRnvz0ZoC-WAGIhR9qbPYeRC4ccmJRZ/preview" width="330" height="240" allow="autoplay"></iframe>
