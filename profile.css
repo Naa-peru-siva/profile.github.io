@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-size: 1.8vw;
+    font-family: "Poppins", sans-serif;
 }
 
 header {
@@ -100,7 +101,7 @@ hr {
 
 #profilepic {
     display: flex;    
-    height: 47vw;
+    height: 55vw;
     margin-top: auto;
     margin-right: 10vw;
     filter: contrast(110%);
@@ -113,7 +114,7 @@ hr {
     }
     
     100% {
-       margin-right: 4vw;
+       margin-right: 0vw;
     }
 }
 
