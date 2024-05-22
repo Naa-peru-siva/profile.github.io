@@ -2,124 +2,138 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Profile</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Meddon&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="profile.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.js"            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous">   
-    </script>
+    <link rel="stylesheet" href="profile.css">
     <script src="profile.js"></script>
 </head>
-<body>  
+<body>
     <header>
-       <div style="display: flex;">
-        <img class="pic" src="https://lh3.googleusercontent.com/fife/ALs6j_GcJDgJnXB7kd7Nau9XPpim83Ec6lfXcPzeUQjrqe0rxxzf_zbiOY-u5xFb545zvgyfNkGoRvYlGJEBCMH_UBp-tjKyF4uSsePy4mdpYOQwTptOtfqycuulO-v_lrpMQZOfxcVbrCxeOh7DyWrp__f-PIQRYSJn5G-rr9-AYQH5IHkVQfWVcmvhHD4f4qCmg6LKtMLtlU8y4CDweD5A7NTnmu2setFWvvHvFuH6Mzl37JV0IGBBvdg9Wss8dLP919qJWYnkC4LdaFB4UaHcLixirJfxiCD8OysxY3rGmJnz3Id2m9ZptBHp2O8ldDefo5lJqxGE7n1skM_WmEGVwVFx6bjugK6bL2xRvg3ZNUm_AwPcIe7abbomnoKSrl5XXDG789PLQIbp6XI18muji-Ofm0Dke-6DTzjUrtXlayCU0khfQIdEE9XLAR8H0WWr8d01IEzKRFffeIuPGgqs6gvTW6AJLmIjCkPU7sJFpKphWXt3e4j42aqhXnWwsnRvNaGsxhZEaGMxGAZPkv162KAh1IsNFLilDIcOXqvm4GdJ8BrTER_QctDAFn4xs8Euihk5S1fGrhmDmqRYLp8JD7al7aEwXa910BhRmsXpauD8cVt8AJip_ORrQ97YL9vjRzenjEL3n0eNk_J4M2MhbNciyVd8rxqVChJE23Kr-cVme9RZFD2CxOGgnSTHI-lQa6rpyDJKTnlgGyuuu69oR1ztdffWlxEdk9osruaARmdcWEgF3M5rTWrv7LHrFhvPGin-zbYLnYw7262NBLVGknKy-FD1xwOn7AU_zriZ0tI3TqaU9lP6wX2zEVutJ3MY60EQqzSkT4dMb3OT9vHvxLc-VzgUFCgx7V4st0IlxJgW0IlxFyuwFC84jvyq6V0FcS-d_FN-4eJkwhhk_LvbMw8WupXy4dZgm1WDZH66q-iJFI1PVsad-FqDo8M2py4hHKnoFGj65uMDSZn20LHh_gF1abWJ_cne7kRwP_npHba53xNUza7Gk48H05HltDEWcQssFlUWSJj3AyGElS4tzkzNKy4VDRsGMnrtm3F2sJf3eRrZOu2tnB2oTgkDWYOSUuNdV6e45aDm5EmqHbLR3uI0I-vk4FPRf9JZUn1bW5MRMGrauNUrUkI3Ymuwb5UzsPZWmmFe11G3hkaDpGBLjmuSIJg07_KNU3tOxkZL1M156KrO9MfGEh3faJgSERQrXtjfL8FLMtXJ_rk7KfdJgAwuU-6l7CBLpYZD4khcRrb0oqxZdnxzoBTat8ejNdfrMGXVdKVCsNcH-J9qklypX8O9Zjavg-72bg0t6BsGpDV7Zy3E66A3UZ4JlklCFaut696jQT-fZ8brnGCLjQGEifcR_olQ6Kzpn4whOhwrVzccfHLupfEvOTRK1d6Uzmq4dBbZ4PxaGYg4NMsYG-VztGZG3_2HLlNSyHOgN1D3Cw67UJCLOzLHaVpkgtFMUosI3rk6mqoV32zssOxCxVJ3Nr4UsuZcSFp7IPTDwl8-i1orPTEBJTYH9SS6LyBphG-LaS_NMBdoBk8yj_Smz0XYk9wf31YF0iOcXULYeVtt9zHZLw6E0yJbwJ-1odryQtYEn1ELJxIwbwwu5_Q=w348-h260-p-k-nu">    
-         <div style="padding-top: 3%;">
-				        <p class="title">K<span class="la">althireddy</span> S<span class="la">iva</span> S<span class="la">ankar</span></p>
-				        <p class="sub-title">Aspiring Frontend Developer</p>
-			     </div>	
-			    </div>    
-        <nav>
-            <ul>
-                <li class="showItem pop" data-item="item1">Home</li>
-                <li class="showItem pop" data-item="item2">Projects</li>
-                <li class="showItem pop" data-item="item3">Certifications</li>
-            </ul>
-        </nav>       
+        <div id="leftpart">        
+            <div id="heading">
+                 <div>
+                     <span class="fl">K</span><span class="rl">ALTHIREDDY</span>
+                 </div> 
+                 <div>
+                     <span class="fl">S</span><span class="rl">IVA</span>
+                 </div>
+                 <div>
+                     <span class="fl">S</span><span class="rl">ANKAR</span>
+                 </div>
+            </div>            
+            <div id="caption" style="font-size: 2vw;">Aspiring Frontend Developer</div>         
+            <nav>
+                   <span class="nav-item tab" id="item1" onclick="showSection('section1');" >Home<hr></span>                
+                <span class="nav-item tab" id="item2" onclick="showSection('section2');">Projects<hr></span>
+                <span class="nav-item tab" id="item2" onclick="showSection('section3');">Certifications<hr></span>
+            </nav>
+        </div>  
+        <img id="profilepic" src="https://i.imghippo.com/files/i4z8v1716033453.png" alt="pic" border="0">            
     </header>
-    <br>
-  
-    <main class="spacing"> 
-        <div id="item1" class="item" style="display:block;">        
-            <div class="spacing">
-                <h1 class="headings-effect">About</h1>
-                <p>Interested in the field of web development to implement the creative skills, ideas towards work. A person of hardworking nature and great commitment. Looking for the opportunities by improving the skills.</p>
+    
+    <main>
+        <div id="section1" class="section">
+            <div class="sections">
+                <span class="headings" >ABOUT</span>
+                <p class="itesec">Interested in making creative things and designing part, a person of hardworking nature with a great commitment.</p>
+            </div>                
+            <div class="sections">
+                <span class="headings" >EDUCATION</span>
+                <div class="itesec">
+                    <div class="itearr">
+                        <div>Bachelor of Technology in Computer Science and Engineering<br><span style="font-weight: 380;">Narayana Engineering college, Gudur<br>2022 - 2025</span>
+                        </div>
+                        <img style="height: 9vw;margin-right: -1.5vw;"class="iteimg" src="https://th.bing.com/th/id/OIP.jtybx4kndL0HBx7TJBr94gAAAA?dpr=2&pid=ImgDetMain" alt="logo">
+                    </div><br>
+                    <div class="itearr">
+                        <div>Diploma in Electrical and Electronics Engineering<br><span style="font-weight: 380;">Govt.polytechnic college, Gudur<br>2019 - 2022</span>
+                        </div>
+                        <img style="height: 6vw;"class="iteimg" src="https://th.bing.com/th/id/OIP.3Ss6PfpmAlwIGYcoQpxXVwHaHa?dpr=2&pid=ImgDetMain" alt="logo">
+                    </div>
+                </div>
             </div>
-            
-            <div class="arrange" class="spacing" style="justify-content: space-around">          
-                <span class="spacing">
-                     <ul>
-                        <li style="list-style-type: none;"><h1 class="headings-effect">skills</h1></li>
-                        <br>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Javascript HTML DOM</li>
-                            <li>communication</li>
-                     </ul>              
-                </span>
-                
-                <span class="spacing">
-                    <ul>
-                        <li style="list-style-type: none;"><h1 class="headings-effect">Trainings</h1></li><br>
-                            <li>Web Development <sub> - Skillvertex</sub></li>
-                            <li>Fullstack Development <sub> - Indstacks</sub></li>
-                            <li>Javascript programming <sub>- mindlusters</sub></li>
-                    </ul>
-                </span>
-
-                <span class="spacing">
-                    <ul>
-                        <li style="list-style-type: none;"><h1 class="headings-effect">Education</h1></li><br>
-                        <li style="list-style-type: none;"><span style="font-weight: 600;">Bachelor of Technology in Computer Science and Engineering</span><br>Narayana Engineering college, Gudur<br>2022 - 2025</li><br>
-                        <li style="list-style-type: none;"><span style="font-weight: 600;">Diploma in Electrical and Electronics Engineering</span><br>Govt.polytechnic college, Gudur<br>2019 - 2022</li>
-                    </ul>
-                </span>
+            <div class="sections" style="display: flex;">
+                <div>                
+                    <span class="headings">SKILLS</span>
+                    <div class="itesec" style="display: flex;flex-wrap: wrap; justify-content: space-around;">
+                        <figure>
+                        <img class="skiimg" src="https://th.bing.com/th/id/OIP.puNg4H_HYi5lJJ1R3GdhjAAAAA?dpr=2&pid=ImgDetMain" alt="logo">
+                        <figcaption>Hypertext Markup Language</figcaption> 
+                   </figure>
+                   <figure>
+                        <img class="skiimg" src="https://www.loginworks.com/wp-content/uploads/2017/12/css.jpg" alt="logo">
+                        <figcaption>Cascading Style Sheets</figcaption> 
+                   </figure>
+                   <figure>
+                        <img class="skiimg" src="https://cdn.freebiesupply.com/logos/large/2x/logo-javascript-logo-black-and-white.png" alt="logo">
+                        <figcaption>Javascript</figcaption> 
+                   </figure>
+                   <figure>
+                        <img class="skiimg" src="https://c.pxhere.com/images/f6/08/f96ae27c6b7e3f840ae352d73e55-1637899.jpg!d" alt="logo">
+                        <figcaption>Communication</figcaption> 
+                   </figure>
+                    </div>
+               </div>          
+            </div>
+            <div class="sections">
+                <span class="headings">COURSES</span>
+                <div class="itesec">
+                    <p class="itearr">Basics of Web Development<img class="iteimg" src="https://webassets.mongodb.com/_com_assets/cms/ibmlogo-s4il2j9lwy.png" alt="logo"></p>              
+                <p class="itearr">Javascript Basic programming<img class="iteimg" src="https://th.bing.com/th/id/OIP.SBMiMQ60BBCKH6DIskmO4wHaCv?dpr=2&pid=ImgDetMain" alt="logo"></p>
+                <p class="itearr">Basics of Fullstack Development<img class="iteimg" src="https://indstack.com/wp-content/uploads/thegem-logos/logo_8d0513827e412088dd263bdc1ec8a7af_3x.png" alt="logo"></p>
+                <p class="itearr">Microsoft Azure AI Fundamentals<img class="iteimg"  src="https://pngimg.com/uploads/microsoft/microsoft_PNG10.png" alt="logo"></p>
+                </div>              
+            </div>
+            <div class="sections">
+                <span class="headings">INTERNSHIPS</span>
+                <div class="itesec">
+                    <p class="itearr">Web Development<img class="iteimg" style="height: 8vw;" src="https://th.bing.com/th/id/OIP.Pmm-BotoD4dkI9ojPl-X9QHaEO?dpr=2&pid=ImgDetMain" alt="logo"></p>   
+                </div>                                                                                                       
              </div>
-        </div>  
-        
-        <div id="item2" class="item" style="display:none;">
-            <center><h1 class="headings-effect">Projects</h1></center>
-            <br><br><br>
-            <h2 class="ph hborderline">ClassicTunes</h2>
-            <div class="border cborderline"> 
-                <p>A Static Website to Download Audio Tracks</p>
-                <span class="arrange">
-                    <iframe src="https://drive.google.com/file/d/1-G_CNKoecCX1y4XpdTJFowXrL7J9mF73/preview" width="580" height="340" allow="autoplay"></iframe>
-                    <iframe src="https://drive.google.com/file/d/1h-3N8Hp07wQgaJ2zGOaqwmd1m-4WSZM2/preview" width="580" height="340" allow="autoplay"></iframe>
-                    <iframe src="https://drive.google.com/file/d/1FRwliKFlnR8Nw9n2rOO2y199j4SnTeud/preview" width="580" height="340" allow="autoplay"></iframe>
-                    <iframe src="https://drive.google.com/file/d/1IKMEg0gqcmgZufZNVuNMl8Kw43tKV702/preview" width="580" height="340" allow="autoplay"></iframe>
-                </span>
-                <br>
-                <h2 class="click">
-                <center><b><a style="color: black;" href="https://naa-peru-siva.github.io/staticwebsite.github.io/"><span class="visitlink">visit site</span></a></b></center>
-                </h2>
-                <br>
-            </div>
-              
         </div>
-        
-        <div id="item3" class="item" style="display:none;">
-           <center><h1 class="headings-effect">Certifications</h1></center>
-           <br><br><br>
-            <span class="arrange">
-                <iframe src="https://drive.google.com/file/d/1-GRnvz0ZoC-WAGIhR9qbPYeRC4ccmJRZ/preview" width="330" height="240" allow="autoplay"></iframe>
-                <iframe src="https://drive.google.com/file/d/1V3mPYI1pqJ2I8qmHlkgyWba5v4nJdOsK/preview" width="300" height="388" allow="autoplay"></iframe>
-                <iframe src="https://drive.google.com/file/d/1Mta7QRtsM-pUiCGtSfsoon3E_vQWr5ek/preview" width="300" height="233" allow="autoplay"></iframe>
-                <iframe src="https://drive.google.com/file/d/1bySdIpkZYKHA-ry4adkPXrjyQbmlw04s/preview" width="300" height="169" allow="autoplay"></iframe>
-                <iframe src="https://drive.google.com/file/d/12Rw5vydaY0ECPPtL9yeXUsklAKk-aX8O/preview" width="300" height="240" allow="autoplay"></iframe>
-            </span>
-        </div>  
-    </main>    
-     
-    <footer>  
-        <div class="arrange">
-            <span>
-               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/></svg>&nbsp;&nbsp;<p>+91 6281635622</p>
-        </span>
-       
-           <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16"> <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/> </svg>&nbsp;&nbsp;<p><a href="mailto: sivasankarkalthireddy1@gmail.com">sivasankarkalthireddy1@gmail.com</a></p>
-         </span>
-            
-             <span>
-             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16"> <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/> </svg>&nbsp;&nbsp;<p><a href="https://www.linkedin.com/in/kalthireddy-siva-sankar-175405239?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a></p>  
-             </span>
-         </div> 
-         <center><p style="font-size: 0.8vh;"><span style="font-family: Arial, sans-serif;">&copy;</span> 2024 Designed by Kalthireddy Siva Sankar</p></center>     
-    </footer>          
+        <!-- projects -->
+        <div id="section2" class="section">
+            <span class="headings">PROJECTS</span><br><br>
+            <h1>Chalana Chitram</h1>
+            <p>It consist of a movies website interface and you can browse available movies and also download them, but the downloadable file is a demo file(text file).</p>
+            <center>
+            <img class="proimg" src="https://i.imghippo.com/files/daXb01716182931.jpg" alt="" border="0">
+            <img class="proimg" src="https://i.imghippo.com/files/1bfhB1716183187.jpg" alt="" border="0">
+            <img class="proimg"src="https://i.imghippo.com/files/T7blt1716183242.jpg" alt="" border="0">
+            </center>
+            <a class="prolin" href="https://naa-peru-siva.github.io/chalanachitram.github.io/">click here to visit</a>
+        </div>
+        <!-- certificates -->
+        <div id="section3" class="section">
+            <span class="headings">CERTIFICATIONS</span>
+            <br><br>
+            <div id="cercon">        
+                <img class="cerimg" src="https://i.imghippo.com/files/JwFE81716189993.png" alt="" border="0">
+                <img class="cerimg" src="https://i.imghippo.com/files/y227z1716346944.png" alt="" border="0">
+                <img class="cerimg" src="https://i.imghippo.com/files/dYINZ1716190086.jpg" alt="" border="0">
+                <img class="cerimg" src="https://i.imghippo.com/files/hktnD1716189899.jpg" alt="" border="0">
+                <img class="cerimg" src="https://i.imghippo.com/files/tjW021716200584.jpg" alt="" border="0">
+                <img class="cerimg" src="https://i.imghippo.com/files/XQ4kR1716190234.png" alt="" border="0">
+                <img class="cerimg" src="https://i.imghippo.com/files/63XNa1716190037.jpg" alt="" border="0">
+            </div>
+        </div>
+    </main>
+   
+    <footer>
+        <div id="footop">
+            <div id="contact">CONTACT</div>
+            <center id="cdetails">  
+                <a href="https://wa.me/6281635622"><svg xmlns="http://www.w3.org/2000/svg" width="2vw" height="2vw" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+  <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+</svg>&nbsp;&nbsp;+91 6281635622</a>                <a href="mailto: sivasankarkalthireddy1@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" width="2vw" height="2vw" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+</svg>&nbsp;&nbsp;sivasankarkalthireddy1@gmail.com</a>
+                <a href="https://www.linkedin.com/in/kalthireddy-siva-sankar-175405239?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><svg xmlns="http://www.w3.org/2000/svg" width="2vw" height="2vw" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+</svg>&nbsp;&nbsp;LinkedIn</a>
+            </center>
+        </div>            
+        <center id="smalin">&copy; 2024 Designed By Kalthireddy Siva Sankar</center>
+    </footer>
 </body>
-			    </html>
-			
+</html>
