@@ -7,8 +7,7 @@ header {
     color: white;
     display: flex;
     justify-content: space-between;
-    background: linear-gradient(to right, black 60%, white 40%);
-    padding-top: 0vw;  
+    background: linear-gradient(to right, black 60%, white 40%); 
 }
 
 #heading {
