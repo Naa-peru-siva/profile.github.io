@@ -8,7 +8,7 @@ header {
     color: white;
     display: flex;
     justify-content: space-between;
-    background: linear-gradient(to right, black 60%, white 40%); 
+    background: linear-gradient(to right, black 60%, white 40%);  
 }
 
 #heading {
@@ -150,7 +150,28 @@ main {
 }
 
 img {
-    filter: grayscale(100%);
+    filter: grayscale(100%);    
+}
+
+.achiimg, .proimg, .cerimg {
+    border: 1vw solid black;
+    border-radius: 0.5vw;
+}
+
+img:hover {
+    filter: grayscale(0%);
+}
+
+.achiimg:hover {
+    border: 0.5vw solid black;
+}
+
+.proimg:hover {
+    border: 0.5vw solid black;
+}
+
+.cerimg:hover {
+    border: 0.5vw solid black;
 }
 
 .itesec {
@@ -160,7 +181,7 @@ img {
 }
 
 .itesec:hover {
-    font-weight: bold;
+    font-weight: 500;
 }
 
 @keyframes md {
@@ -236,22 +257,7 @@ a {
 
 .proimg {
     height: 46vw;
-    filter: grayscale(90%);
-    border-top: 0.5vw solid black;
-    border-bottom: 0.5vw solid black;
-    border-left: 4vw solid black;
-    border-right: 4vw solid black;
-    border-bottom-right-radius: 1.4px;
-    border-bottom-left-radius: 1.4px;
-    border-top-left-radius: 1.4px;
-    border-top-right-radius: 1.4px;
     margin: 4vw 0;
-}
-
-.proimg:hover {
-    border-left: 0.5vw solid black;
-    border-right: 0.5vw solid black;
-    height: 47.5vw;
 }
 
 .prolin {
@@ -272,21 +278,6 @@ a {
 .cerimg {
     height: 25vw;
     margin: 2vw;
-    border-left: 2vw solid black;
-    border-right: 2vw solid black;
-    border-bottom: 0.5vw solid black;
-    border-top: 0.5vw solid black;
-    border-bottom-right-radius: 1.4px;
-    border-bottom-left-radius: 1.4px;
-    border-top-left-radius: 1.4px;
-    border-top-right-radius: 1.4px;
-    filter: grayscale(90%);
-}
-
-.cerimg:hover {
-    height: 26.5vw;
-    border-left: 0.5vw solid black;
-    border-right: 0.5vw solid black;
 }
 
 #cercon {
@@ -294,4 +285,7 @@ a {
     flex-wrap: wrap;
     justify-content: space-around;
 }
-		 
+
+.achiimg {
+    height: 30vw;    
+}
