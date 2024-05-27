@@ -162,6 +162,7 @@ img:hover {
 
 .itesec:hover {
     font-weight: 500;
+    font-size: 1.5vw;
 }
 
 @keyframes md {
