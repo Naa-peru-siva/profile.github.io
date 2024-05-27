@@ -15,8 +15,7 @@ header {
 }
 
 #heading {
-    padding-top: 8vw;
-    padding-bottom: 0vw;     
+    padding-top: 8vw;  
 }
 
 .letters {
@@ -94,7 +93,7 @@ hr {
     height: 40vw;
     margin-top: auto;
     margin-right: 10vw;
-    filter: contrast(110%);
+    filter: contrast(120%);
 }
 
 main {
@@ -103,7 +102,7 @@ main {
 }
 
 .sections {
-  margin: 5vw 0;  
+  margin: 10vw 0;  
 }
 
 .headings {
@@ -125,12 +124,13 @@ main {
     }
     
     100% {
-        margin-left: -4vw;
+        margin-left: -6vw;
     }
 }
 
 img {
-    filter: grayscale(100%);    
+    filter: grayscale(100%);   
+     
 }
 
 .achiimg, .proimg, .cerimg {
@@ -297,4 +297,3 @@ footer {
 #details > a > svg {
     margin-right: 1vw;
 }
-
