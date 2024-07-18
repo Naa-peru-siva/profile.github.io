@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>KSS profile</title>
+    <title>profile</title>
     <link rel="icon" href="https://i.ibb.co/yFsKCZ9/Adobe-Express-20240615-2002300-1.png">    
     <link rel="stylesheet" href="profile.css">
-    <script src="profile.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -14,63 +13,49 @@
 <body>
     <header>
         <div id="leftpart">        
-            <div id="heading">
-                 <div class="letters">
-                     <span class="fl">K</span><span class="rl">ALTHIREDDY</span>
-                 </div> 
-                 <div class="letters">
-                     <span class="fl">S</span><span class="rl">IVA</span>
-                 </div>
-                 <div class="letters">
-                     <span class="fl">S</span><span class="rl">ANKAR</span>
-                 </div>
-            </div> 
-            <div>
-                <h1 id="headingm">KALTHIREDDY SIVA SANKAR</h1>
-            </div>           
-            <div id="caption" style="font-size: 1.5vw;">Frontend Development Trainee</div>   
-            <div><h2 id="captionm">Frontend Development Trainee</h2></div>      
-            <nav>
-                   <span class="nav-item tab" id="item1" onclick="showSection('section1');" >Home</span>                
-                <span class="nav-item tab" id="item2" onclick="showSection('section2');">Projects</span>
-                <span class="nav-item tab" id="item2" onclick="showSection('section3');">Certifications</span>
-            </nav>
+                <p id="wish">Hello, I'm</p>
+                <p id="heading">KALTHIREDDY SIVA SANKAR</p>
+                <p id="headingm">KALTHIREDDY SIVA SANKAR</p>         
+            <div id="caption">FRONTEND DEVELOPMENT TRAINEE</div>   
+            <p id="captionm">Frontend Development Trainee</p>                
         </div>  
         <img id="profilepic" src="https://i.ibb.co/Tc46CKq/IMG-20240518-172654.png" alt="pic" border="0">            
     </header>
     
-    <main>
-        <div id="section1" class="section">
+    <main>        
             <div style="margin-top: 2vw;" class="sections">
                 <span class="headings" >ABOUT</span>
-                <div class="itesec">Interested in making creative things and designing part, a person of hardworking nature with a great commitment.</div>
+                <div class="itesec">A person of hardworking nature with a great commitment. Interested in Graphic Design, Content creation, Frontend development and also in Multimedia</div>
             </div>                
             <div class="sections">
                 <span class="headings" >EDUCATION</span>
                 <div class="itesec">
-                    <div class="itearr">
                         <div>Bachelor of Technology in Computer Science and Engineering<br><span style="font-weight: 380;">Narayana Engineering college, Gudur<br>2022 - 2025</span>
                         </div>
-                        <img style="height: 9vw;margin-right: -1.5vw;"class="iteimg" src="https://th.bing.com/th/id/OIP.jtybx4kndL0HBx7TJBr94gAAAA?dpr=2&pid=ImgDetMain" alt="logo">
-                    </div><br>
-                    <div class="itearr">
+                        <br>
                         <div>Diploma in Electrical and Electronics Engineering<br><span style="font-weight: 380;">Govt.polytechnic college, Gudur<br>2019 - 2022</span>
-                        </div>
-                        <img style="height: 6vw;"class="iteimg" src="https://th.bing.com/th/id/OIP.3Ss6PfpmAlwIGYcoQpxXVwHaHa?dpr=2&pid=ImgDetMain" alt="logo">
-                    </div>
+                        </div>                      
                 </div>
             </div>
-            <div class="sections" style="display: flex;">
+            <div class="sections" >
                 <div>                
                     <span class="headings">SKILLS</span>
-                    <div class="itesec" style="display: flex;flex-wrap: wrap; justify-content: space-around;">
+                    <div class="itesec skills">
+                        <figure>
+                            <img class="skiimg" src="https://i.ibb.co/C9RjNPQ/Screenshot-2024-07-06-20-32-32-24-40deb401b9ffe8e1df2f1cc5ba480b12.jpg" alt="ai prompting image">
+                            <figcaption>AI Prompting</figcaption>
+                        </figure>
+                        <figure>
+                            <img class="skiimg" src="https://i.ibb.co/6ntmVQd/3569120-200.png" alt="graphic icon">
+                            <figcaption>Graphic Design</figcaption>
+                        </figure>
                         <figure>
                         <img class="skiimg" src="https://th.bing.com/th/id/OIP.puNg4H_HYi5lJJ1R3GdhjAAAAA?dpr=2&pid=ImgDetMain" alt="logo">
-                        <figcaption>Hypertext Markup Language</figcaption> 
+                        <figcaption>Hypertext <br>Markup<br>Language</figcaption> 
                    </figure>
                    <figure>
                         <img class="skiimg" src="https://www.loginworks.com/wp-content/uploads/2017/12/css.jpg" alt="logo">
-                        <figcaption>Cascading Style Sheets</figcaption> 
+                        <figcaption>Cascading <br>Style<br>Sheets</figcaption> 
                    </figure>
                    <figure>
                         <img class="skiimg" src="https://cdn.freebiesupply.com/logos/large/2x/logo-javascript-logo-black-and-white.png" alt="logo">
@@ -88,46 +73,66 @@
             </div>
             <div class="sections">
                 <span class="headings">COURSES</span>
-                <div class="itesec">
-                    <p class="itearr">Basics of Web Development<img class="iteimg" src="https://webassets.mongodb.com/_com_assets/cms/ibmlogo-s4il2j9lwy.png" alt="logo"></p>              
-                <p class="itearr">Javascript Basic programming<img class="iteimg" src="https://th.bing.com/th/id/OIP.SBMiMQ60BBCKH6DIskmO4wHaCv?dpr=2&pid=ImgDetMain" alt="logo"></p>
-                <p class="itearr">Basics of Fullstack Development<img class="iteimg" src="https://indstack.com/wp-content/uploads/thegem-logos/logo_8d0513827e412088dd263bdc1ec8a7af_3x.png" alt="logo"></p>
-                <p class="itearr">Microsoft Azure AI Fundamentals<img class="iteimg"  src="https://pngimg.com/uploads/microsoft/microsoft_PNG10.png" alt="logo"></p>
+                <div class="itesec courses">
+                    <div class="backimgcon">
+                        <img  src="https://i.ibb.co/hR9VyQ7/images-q-tbn-ANd9-Gc-QPBss61-ZSzm-BM75-Jqd-YCVqsfq-J4-Jij-X0mt9g-usqp-CAU.png" alt="company image">
+                        <p>Basics of Web Development</p>     
+                    </div>
+                    <div class="backimgcon">
+                        <img  src="https://i.ibb.co/KKrzWDF/images-q-tbn-ANd9-Gc-RYz-Vcldid-VPnqhjlmzn-D9-Xz9-PX2-ZJb4n488-A-s.png" alt="company image">
+                        <p>Javascript Basic programming</p>     
+                    </div>
+                    <div class="backimgcon">
+                        <img  src="https://i.ibb.co/G0cYkWx/logo-8d0513827e412088dd263bdc1ec8a7af-2x.png" alt="company image">
+                        <p>Basics of Fullstack Development</p>    
+                    </div>
+                    <div class="backimgcon">
+                        <img  src="https://i.ibb.co/2dY3qrT/RE1-Mu3b-ver-5c31.png" alt="company image">
+                        <p>Microsoft Azure AI Fundamentals</p>    
+                    </div>               
                 </div>              
             </div>
             <div class="sections">
                 <span class="headings">INTERNSHIPS</span>
-                <div class="itesec">
-                    <p class="itearr">Web Development<img class="iteimg" style="height: 5vw;" src="https://th.bing.com/th/id/OIP.Pmm-BotoD4dkI9ojPl-X9QHaEO?dpr=2&pid=ImgDetMain" alt="logo"></p>   
+                <div class="itesec internships">
+                    <div class="backimgcon">
+                        <img src="https://i.ibb.co/vBqpfBf/logo-web2.png" alt="company image">
+                    <p>AI Prompting</p>
+                    </div> 
+                    <div class="backimgcon">
+                        <img src="https://i.ibb.co/yhswdpk/images.png" alt="company image">
+                    <p>Web Development</p>
+                    </div>                       
                 </div>                                                                                                       
-             </div>
-             <div class="sections">
-                 <span class="headings">
-                     ACHIEVEMENTS
-                 </span>
-                 <center class="itesec">                     
-                     <img class="achiimg" src="https://i.ibb.co/g6KxKnh/IMG-20240301-WA0064.jpg" alt="" border="0">
-                     <p>I was awarded third prize in the competition of webclone event(focused on replicating given webpage) organised by data science club in our college.</p> 
-                 </center>
-             </div>
-        </div>
-        <!-- projects -->
-        <div id="section2" class="section">
-            <span class="headings">PROJECTS</span><br><br>
-            <h1>Chalana Chitram</h1>
-            <p>It consist of a movies website interface and you can browse available movies and also download them, but the downloadable file is a demo file(text file).</p>
-            <center>
+             </div>             
+             <div class="sections projects">
+                 <span class="headings">PROJECTS</span><br>
+            <div class="textshadow">
+                <h1>Tastes</h1>
+                <p>Listing the tasty food items with details of place, location and cost.</p>
+                </div>
+                <center>
+            <img class="proimg" src="https://i.ibb.co/D8wCNfr/IMG-20240705-WA0015.jpg" alt="screenshot" border="0">
+            <img class="proimg" src="https://i.ibb.co/JFKY3jt/IMG-20240705-WA0011.jpg" alt="screenshot" border="0">
+            <img class="proimg"            src="https://i.ibb.co/xSgGPhR/IMG-20240705-WA0010.jpg" alt="screenshot" border="0">                                  
+            <a class="prolin" href="https://naa-peru-siva.github.io/tastes.github.io/">click here to visit</a>
+                </center><br><br>
+            <div class="textshadow">
+                <h1>Chalana Chitram</h1>
+                <p>It consist of a movies website interface and you can browse available movies and also download them, but the downloadable file is a demo file(text file).</p>
+                </div>
+                <center>
             <img class="proimg" src="https://i.ibb.co/jyMpLwX/IMG-20240516-WA0009.jpg" alt="screenshot" border="0">
             <img class="proimg" src="https://i.ibb.co/hHcGf31/IMG-20240516-WA0008.jpg" alt="screenshot" border="0">
-            <img class="proimg"src="https://i.ibb.co/zXYStNz/IMG-20240516-WA0005.jpg" alt="screenshot" border="0">
-            </center>
+            <img class="proimg"src="https://i.ibb.co/zXYStNz/IMG-20240516-WA0005.jpg" alt="screenshot"  </center>                                    
             <a class="prolin" href="https://naa-peru-siva.github.io/chalanachitram.github.io/">click here to visit</a>
-        </div>
-        <!-- certificates -->
-        <div id="section3" class="section">
-            <span class="headings">CERTIFICATIONS</span>
+        </div>    
+             </div>
+             <div class="sections">
+                 <span class="headings">CERTIFICATIONS</span>
             <br><br>
-            <div id="cercon">        
+            <div class="cercon">
+                <img class="cerimg" src="https://i.ibb.co/9gRqBWK/EXCELR-74640-Kalthireddy-Siva-Sankar.jpg" alt="cerificate">        
                 <img class="cerimg" src="https://i.ibb.co/vDgqYmt/IBM-CAD101-EN-Certificate-ed-X.png" alt="certificate" border="0">
                 <img class="cerimg" src="https://i.ibb.co/g6xv3KX/skill-vertex-OCTOBER-TRAINING-CERTIFICATES-556.jpg" alt="certificate" border="0">
                 <img class="cerimg" src="https://i.ibb.co/ngfbPrk/skillvertex-internship-comp-web-d-11th-72.jpg" alt="certificate" border="0">
@@ -135,34 +140,31 @@
                 <img class="cerimg" src="https://i.ibb.co/S7BGHVS/Full-Stack-course.png" alt="certificate" border="0">
                 <img class="cerimg" src="https://i.ibb.co/SyvnpjT/microsoft-azure-ai-fundamentals.jpg" alt="certificate" border="0">
                 <img class="cerimg" src="https://i.ibb.co/dbKmLTq/webclone-event.png" alt="certificate" border="0">
-            </div>
-        </div>
+            </div>   
+             </div>
+             <div class="sections">
+                 <span class="headings">
+                     ACHIEVEMENTS
+                 </span><br><br>
+                 <center class="itesec" >                     
+                     <img class="achiimg" src="https://i.ibb.co/g6KxKnh/IMG-20240301-WA0064.jpg" alt="image" border="0">
+                     <p>I was awarded third prize in the competition of webclone event(focused on replicating given webpage) organised by data science club in our college.</p> 
+                 </center>
+             </div>
+        </div>        
     </main>
    
     <footer>
-        <div class="conres">
           <div id="contact">  
-                    <h2 id="cheading">CONTACT</h2>  
-                    <div id="cdetails">                      
-                    <a href="https://wa.me/6281635622"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
-  <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
-</svg>+91 6281635622</a>                <a href="mailto: sivasankarkalthireddy1@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" width="2vw" height="2vw" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
-  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
-</svg>sivasankarkalthireddy1@gmail.com</a>
-                <a href="https://www.linkedin.com/in/kalthireddy-siva-sankar-175405239?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><svg xmlns="http://www.w3.org/2000/svg" width="2vw" height="2vw" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
-</svg>LinkedIn</a>
+                    <p id="cheading">CONTACT</p>  
+                    <div id="cdetails"> 
+                        <a href="https://www.linkedin.com/in/kalthireddy-siva-sankar-175405239?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="https://i.ibb.co/JFrtSmH/images-q-tbn-ANd9-Gc-R-i-Denka-Vcp-zcf3-SA6-Wh-Evx6243nu-Ac-JP7a-IZEwz-PYSDi32h82bj-EDQI-s-10.jpg" alt="">
+</svg><span class="linktext">LinkedIn</span></a>                     
+                        <a href="https://wa.me/6281635622"><img src="https://i.ibb.co/vPy03Zx/Whatsapp-logo-vector-png-3.png" alt="whatsapp logo"><span class="linktext">+91 6281635622</span></a>                    <a href="mailto: sivasankarkalthireddy1@gmail.com"><img src="https://i.ibb.co/wd3XMvC/Gmail-logo-design-on-transparent-background-PNG.png" alt="maillogo">
+<span class="linktext">sivasankarkalthireddy1@gmail.com</span></a>               
                 </div>
-            </div>             
-         <center id="resdet">
-             <h2>DOWNLOAD CV</h2>
-            <a style="color: white;font-weight: 400;text-decoration: none;" href="https://docs.google.com/uc?export=download&id=1AiXHNR3_-kYGBhjKl50OFAemZKM8VpDo" download><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-arrow-down" viewBox="0 0 16 16">
-  <path d="M8.5 6.5a.5.5 0 0 0-1 0v3.793L6.354 9.146a.5.5 0 1 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
-  <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
-</svg>&nbsp;CV</a> 
-    </div>   
-         </center>              
+            </div>                          
         <center id="smalin">&copy; 2024 Designed By Kalthireddy Siva Sankar</center>
     </footer>
 </body>
-                            </html>
+</html>
