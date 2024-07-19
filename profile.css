@@ -426,12 +426,10 @@ figure {
 
 @keyframes move {
     from {
-        transform: translatex(10vw);   
         opacity: 0;     
     }
     
     to {
-        transform: translatex(0);
         opacity: 1;
     }
 }
