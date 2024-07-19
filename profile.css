@@ -38,17 +38,6 @@ figure {
 }
 
 @media(max-width:599px) {
-
-     .cercon, .internships, .courses{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    .internships, .courses, .skills {
-        display: grid;
-        justify-content: center;
-    }
     
     body {
         font-size: 4vw;
@@ -67,13 +56,15 @@ figure {
     header {      
         background: linear-gradient(to bottom, darkgray, transparent);
         padding-top: 4vw;
+        text-align: center;
+        margin-left: -4vw;
         animation: spread 2s linear forwards;
-    }
+    }    
     
     main {
         opacity: 0;
         animation: spread 2s linear forwards;
-        animation-delay: 2.5s;
+        animation-delay: 2s;
     }
     
     @keyframes spread {
@@ -106,6 +97,19 @@ figure {
     
     #headingm {
         font-size: 9vw;
+        font-weight: 500;
+        text-shadow:
+        1.8vw -1.8vw 1.8vw rgba(0,0,0,0.5),
+        0.02vw 0.02vw 0 grey,
+        0.02vw -0.02vw 0 grey,
+        -0.02vw 0.02vw 0 grey,
+        -0.02vw -0.02vw 0 grey,
+        0.35vw -0.35vw 0 #141414,
+        0.30vw -0.30vw 0 #141414,
+       0.25vw -0.25vw 0 #141414,
+        0.20vw -0.20vw 0 #141414,
+        0.15vw -0.15vw 0 #141414,
+        0.10vw -0.10vw 0 #141414;
     }
     
     #captionm {
@@ -126,27 +130,19 @@ figure {
     
     .headings {
         font-size: 5.5vw; 
-        display: flex;          
-        width: 35%;
-        padding-left: 5vw;
-        margin-left: -4vw;
-        margin-right: -2vw;
-        border-top: 0.8vw ridge black;
-        border-right: 0.8vw ridge black;  
-        border-top-right-radius: 1.2vw;
-        animation: linemove 2s linear forwards;
-        animation-delay: 3s;
+        font-weight: 500; 
+        animation: slide 20s linear infinite;       
     } 
     
-    @keyframes linemove {
-        from {
-            width: 35%;            
-        }  
+    @keyframes slide {
+        0%,100% {
+           margin-left: 0vw;
+        }
         
-        to {
-            width: 100%;           
-        }  
-    }       
+        50% {
+            margin-left: 60%;
+        }
+    }
     
     .itesec {
         margin-top: 3vw;
@@ -156,7 +152,7 @@ figure {
         text-transform: uppercase;
     }  
     
-    .projects:hover {
+    .protex:hover {
         text-transform: uppercase;
     }
     
@@ -221,7 +217,8 @@ figure {
         display: grid;
         margin-top: -3vw;
         margin-bottom: 3vw;
-        margin: 3vw;        
+        margin: 3vw;  
+        text-align: center;      
     }
     
     #cheading {
@@ -245,11 +242,28 @@ figure {
     #smalin {
         font-size: 3vw;
     }
+    
+    .skills, .courses, .internships {
+        display: grid;
+        justify-content: center;
+    }
+        
+    .projects, .cercon {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
         
 }
    
 @media(min-width:600px) {
 
+    .skills, .courses, .internships, .projects, .cercon {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
     body {
         font-size: 2vw;
     }
@@ -274,14 +288,8 @@ figure {
         transform: translateY(0vw);
         opacity: 1;
     }
-}    
+}         
     
-    .cercon, .skills, .internships, .courses{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }   
-        
     header {    
     display: flex;
     justify-content: space-around;
@@ -353,7 +361,7 @@ figure {
         border: 0.6vw ridge black;
         border-radius: 1.4vw;
         opacity: 0;
-        animation: enter 2s linear forwards;
+        animation: enter 1s linear forwards;
         animation-delay: 1.8s; 
 }
 
@@ -391,7 +399,7 @@ figure {
 
     .headings {
     font-size: 3vw;
-    font-weight: 500;
+    font-weight: 400;
     text-shadow:
         1.4vw -1.4vw 1.4vw rgba(0,0,0,0.5),
         0.02vw 0.02vw 0 grey,
@@ -402,8 +410,19 @@ figure {
         0.17vw -0.17vw 0 #141414,
         0.15vw -0.15vw 0 #141414,
         0.13vw -0.13vw 0 #141414,
-        0.10vw -0.10vw 0 #141414;                 
-}
+        0.10vw -0.10vw 0 #141414;  
+        animation: weight 4s linear infinite;               
+    }
+    
+    @keyframes weight {
+        0%, 100% {
+            font-weight: 400;
+        }
+        
+        50% {
+            font-weight: 800;
+        }
+    }   
 
 @keyframes move {
     from {
@@ -420,7 +439,7 @@ figure {
     .sections {
       margin: 8vw 0;
       opacity: 0;
-      animation: move 2s linear forwards; 
+      animation: move 1s linear forwards; 
 }
 
     .sections:nth-child(1) {
@@ -581,7 +600,7 @@ figure {
         0.08vw -0.08vw 0 #141414;
     }
     
-        .textshadow {
+    .protex {
           text-shadow: 0.80vw -0.80vw 0.80vw rgba(0,0,0,0.5),
         0.02vw 0.02vw 0 grey,
         0.02vw -0.02vw 0 grey,
@@ -592,6 +611,10 @@ figure {
         0.10vw -0.10vw 0 #141414;
     }
     
+    .protex:hover {
+        text-transform: uppercase;
+    }
+               
     .proimg {
     height: 40vw;
     margin: 3vw;
@@ -663,7 +686,11 @@ figure {
     
      .cercon img:nth-child(7) {
         animation: zoom 6s linear infinite 3.6s;
-    }        
+    }   
+    
+     .cercon img:nth-child(8) {
+        animation: zoom 6s linear infinite 1.4s;
+    }         
         
     .cerimg:hover {
         transform: scale(1.01);
@@ -789,3 +816,4 @@ figure {
 }
     
 }
+
